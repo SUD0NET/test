@@ -1,0 +1,51 @@
+# Tiny Tapeout GF180MCU SRAM starter project information
+project:
+  title:        "Tiny Tapeout GF180 SRAM (Verilog)"
+  author:       "opilitethesmartdev"
+  discord:      ""
+  description:  "Verilog starter project using the official Google GF180MCU 64x8 SRAM macro"
+  language:     "Verilog"
+  clock_hz:     50000000
+
+  # The 64x8 SRAM macro is 431.86 x 232.88 um and requires a 2x2 tile.
+  tiles: "2x2"
+
+  top_module: "tt_um_example"
+
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "SRAM_A0"
+  ui[1]: "SRAM_A1"
+  ui[2]: "SRAM_A2"
+  ui[3]: "SRAM_A3"
+  ui[4]: "SRAM_A4"
+  ui[5]: "SRAM_A5"
+  ui[6]: "SRAM_WE"
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "SRAM_Q0"
+  uo[1]: "SRAM_Q1"
+  uo[2]: "SRAM_Q2"
+  uo[3]: "SRAM_Q3"
+  uo[4]: "SRAM_Q4"
+  uo[5]: "SRAM_Q5"
+  uo[6]: "SRAM_Q6"
+  uo[7]: "SRAM_Q7"
+
+  # Bidirectional pins
+  uio[0]: "SRAM_D0"
+  uio[1]: "SRAM_D1"
+  uio[2]: "SRAM_D2"
+  uio[3]: "SRAM_D3"
+  uio[4]: "SRAM_D4"
+  uio[5]: "SRAM_D5"
+  uio[6]: "SRAM_D6"
+  uio[7]: "SRAM_D7"
+
+# Do not change!
+yaml_version: 6
